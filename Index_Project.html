@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Sagar Tekwani</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            color: black;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            border: 2px solid black;
+        }
+
+        .topbar {
+            background-color: #ADD8E6;
+            text-align: center;
+            padding: 10px;
+            border-bottom: 2px solid black;
+        }
+
+        .topbar a {
+            margin: 0 15px;
+            font-size: 28px;
+            font-weight: bold;
+            color: black;
+            text-decoration: none;
+        }
+
+        .topbar a:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+            display: flex;
+            flex: 1;
+            padding: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            width: 80%;
+            margin-top: 20px;
+        }
+
+        .project-box {
+            background-color: #f0f0f0;
+            border: 2px solid black;
+            padding: 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .project-box:hover {
+            background-color: #d9d9d9;
+        }
+
+        .project-box a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        .project-box p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+        img
+        {
+            width:55%;
+            height: 120px;
+            border: 5px;
+            border-style: solid;
+            border-color: black;           
+        }
+        h6
+        {
+            text-align: center;
+            font-size: 14px;
+            font-weight: bold;
+            color: red;
+            font: optional;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="topbar">
+            <a href="index.html">Home</a>
+            <a href="Index_Skills.html">Skills</a>
+            <a href="Index_Achivement.html">Achivement</a>
+            <a href="Index_Education.html" class="mx-3">Education</a>
+            <a href="Index_Hobbies.html">Hobbies</a>
+        </div>
+
+        <div class="content">
+            <div class="projects-container">
+                <div class="project-box">
+                    <a href="PDF_Project/TicTacToe/TicTacToe.pdf" target="_blank">
+                        <img src="IMAGE_SKILLS/Android.png" alt="">
+                        <h2>TicTacToe</h2>
+                        <p>.....</p>
+                        <p>This project showcases my mobile application development skills through the creation of a TicTacToe game.</p>
+                        <p>.....</p>
+                        <h6>Click here to view the full documentation.</h6>
+                    </a>
+                </div>
+                <div class="project-box">
+                    <a href="PDF_Project/JDBC/JDBC.pdf" target="_blank">
+                        <img src="IMAGE_SKILLS/Java.png" alt="">
+                        <h2>Java Database Connectivity</h2>
+                        <p>.....</p>
+                        <p>In this project, I developed a Java Database Connectivity (JDBC) application using Apache NetBeans and connected it to a MySQL database.</p>
+                        <p>.....</p>
+                        <h6>Click here to view the full documentation.</h6>
+
+                    </a>
+                </div>
+                <div class="project-box">
+                    <a href="PDF_Project/.Net/.Net Project.pdf" target="_blank">
+                        <img src="IMAGE_SKILLS/.net.png" alt="">
+                        <h2>Integrating .NET C# Web Application with SQL for Student Registration Form</h2>
+                        <p>.....</p>
+                        <p>This is my internship project where I developed a web registration form to comprehensively store both student and parents' information. </p>
+                        <p>.....</p>
+                        <h6>Click here to view the full documentation.</h6>
+                    </a>
+                </div>
+                <div class="project-box">
+                    <a href="Project4_Details.html" target="_blank">
+                        <h2>Project 4</h2>
+                        <p>Description of Project 4</p>
+                    </a>
+                </div>
+                <div class="project-box">
+                    <a href="Project4_Details.html" target="_blank">
+                        <h2>Project 5</h2>
+                        <p>Description of Project 5</p>
+                    </a>
+                </div>
+                <div class="project-box">
+                    <a href="Project4_Details.html" target="_blank">
+                        <h2>Project 6</h2>
+                        <p>Description of Project 6</p>5
+                    </a>
+                </div>
+                <!-- Add more project boxes as needed -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
