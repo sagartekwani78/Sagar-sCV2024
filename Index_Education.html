@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Education - Sagar Tekwani</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -13,11 +14,11 @@
             background-color: #ffffff;
         }
 
-        .container {
+        .container-custom {
+            border: 2px solid black;
+            min-height: 100vh;
             display: flex;
             flex-direction: column;
-            min-height: 100vh;
-            border: 2px solid black;
         }
 
         .topbar {
@@ -40,31 +41,27 @@
         }
 
         .content {
-            display: flex;
             flex: 1;
             padding: 20px;
         }
 
         .education-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
             width: 100%;
+            text-align: center;
         }
 
         .education-header {
             font-size: 28px;
             font-weight: bold;
             margin-bottom: 20px;
-            text-align: center;
         }
 
         .education-grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr); 
-            gap: 22px;
-            width: 80%;
-            margin-bottom: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            width: 100%;
+            margin: 0 auto;
         }
 
         .education-item {
@@ -72,22 +69,23 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            width: 100%;
-            height: 250px;
             border: 5px solid black;
             background-color: #ffffff;
-            font-size: 20px;
+            padding: 20px;
             text-align: center;
             position: relative;
-            padding: 20px;
         }
 
         .education-item img {
             width: 50%;
             height: 100px;
-            margin-bottom: auto;
-            margin-top: auto;
+            margin-bottom: 20px;
             border: 2px solid black;
+        }
+
+        .education-item h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
         }
 
         .education-item a {
@@ -95,48 +93,46 @@
             bottom: 10px;
             left: 50%;
             transform: translateX(-50%);
-            background-color: transparent;
-            padding: 100px 200px;
             text-decoration: none;
-            border-radius: 24px;
+            padding: 10px 20px;
+            border: 1px solid black;
+            border-radius: 5px;
+            background-color: #ADD8E6;
+            color: black;
         }
 
         .description-container {
-            width: 80%;
-            margin: 0 auto; 
+            width: 100%;
+            margin-top: 40px;
             border: 2px solid black;
             background-color: #f0f0f0;
             padding: 20px;
         }
 
         .description-container h1 {
-            font-size: 24px; 
+            font-size: 24px;
             font-weight: bold;
-            text-align: center;
-            margin-bottom: auto; 
-            margin-top: auto;
+            margin-bottom: 20px;
         }
 
         .description-container p {
-            margin: 10px 0; 
-            font-size: 18px; 
-            line-height: 1.6; 
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 10px 0;
         }
 
         .description-container .highlight {
-            padding: 2px 5px;
             font-weight: bold;
             text-decoration: underline;
             color: blue;
-            font-size: larger;
         }
     
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="container-fluid container-custom">
         <div class="topbar">
-            <a href="index.html">Home</a>
+            <a href="Index_About.html">Home</a>
             <a href="Index_project.html">Project</a>
             <a href="Index_Achivement.html">Achievement</a>
             <a href="Index_Skills.html">Skills</a>
@@ -159,18 +155,12 @@
                         <h3>Undergraduate</h3>
                         <a href="Marsheet PDF/NPGC/UG/NPGC-All Semester ONLINE Marksheet.pdf" target="_blank"></a>
                     </div>
-                    <!-- <div class="education-item">
-                        <img src="path/to/postgraduate_image.png" alt="Postgraduate">
-                        <h3>Postgraduate</h3>
-                        <a href="path/to/postgraduate_marksheet.pdf" target="_blank"></a>
-                    </div> -->
                 </div>
                 <div class="description-container">
                     <h1>My Educational Journey</h1>
                     <p>Education has always been a cornerstone of my professional development. I have pursued my studies with a deep commitment to excellence, continuously expanding my knowledge and skills.</p>
                     <p><span class="highlight">High School:</span> I completed my high school education in the Humanities field, graduating from both Class 10 and Class 12 through the National Institute of Open Schooling (NIOS) at Study Hall. During this time, I gained a comprehensive understanding of various subjects within the Humanities.</p>
                     <p><span class="highlight">Undergraduate:</span> I am currently pursuing a B.Voc in Software Development at National PG College. Throughout this course, I have acquired extensive knowledge in various programming fields, including Advanced Python, Java, Web Development, SQL, and Mobile Application Development.</p>
-                    <!-- <p><span class="highlight">Postgraduate:</span> My Master's degree in Information Technology further honed my technical skills and prepared me for advanced roles in the tech industry.</p> -->
                 </div>
             </div>
         </div>
